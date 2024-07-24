@@ -101,12 +101,12 @@ WSGI_APPLICATION = 'feedParser.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "feedParser",
-        "USER": "postgres",
-        "PASSWORD": "jordan",
-        "HOST": "127.0.0.1",
-        "PORT": "5432"
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'feedParser',
+        'USER': 'arslan',
+        'PASSWORD': 'arslan',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
