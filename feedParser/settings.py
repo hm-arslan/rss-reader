@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zic87$9t=ceg)_q=%5u@4dwr(u8rhp5qc2l$#$dyy1g5-)q2z=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '5.189.164.195']
 
 
 # Application definition
@@ -41,7 +41,14 @@ INSTALLED_APPS = [
     'authentication',
     'rest_framework.authtoken',
     'rest_framework',
+    'corsheaders',
 ]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1',
+]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 REST_FRAMEWORK = {
